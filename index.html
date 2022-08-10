@@ -30,8 +30,9 @@
 
 					<!-- LOGIN FORM	-->
 					<form action="https://www.freecodecamp.com/email-submit" class="login" method="post">
-						<input type="text" name="text" placeholder="Login" required>
-						<input type="password" name="password" placeholder="password" required>
+						<input type="email" id="email" name="email" placeholder="Enter for e-mail addres" required>
+						<!-- <input type="text" name="text" placeholder="Login" required>
+						<input type="password" name="password" placeholder="password" required> -->
 						<input type="submit" name="" value="Sign in">
 					</form>
 					<!-- /LOGIN FORM-->
@@ -42,7 +43,7 @@
 		<main>
 			<div class="container">
 				<h2 class="collection-title">Image Collection <small>Visualize Quality</small></h2>
-				<div id="image" class="collections">
+				<div id="image" class="collections flex-container">
 					<div class="collection-item-outer"><!--зовнішній предмет(блок) колекції-->
 						<div class="collection-item">
 							<img src="images/profile.jpg" alt="List picture" width="300" height="">
@@ -97,7 +98,7 @@
 				</div>
 
 				<h2>Video Collection <small>Visualize Quality</small></h2>
-				<div id="video" class="collections">
+				<div id="video" class="collections flex-container">
 					<div class="collection-item-outer">
 						<div class="collection-item">
 							<video controls>
@@ -159,7 +160,7 @@
 		<!--FOOTER-->
 		<footer id="footer" class="footer">
 			<div class="container">
-				<p>Copyright © Example.com 2015</p>
+				<p>Copyright © Example.com</p>
 			</div>
 		</footer>
 		<!--/FOOTER-->
