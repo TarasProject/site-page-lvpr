@@ -1,0 +1,150 @@
+/*GENERAL STYLE*/
+body {
+  font-family: Arial, San-Serif;
+  font-size: 100%; /*тобто default розмір шрифту*/
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 13px;
+  line-height: 1.3em; /*висота стрічки
+	має розмір 1,3ем від висоти шрифту*/
+}
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+/*HEADE*/
+.header {
+  padding: 50px 0;
+  background-color: yellowgreen;
+}
+.header h1,
+.header h2 {
+  color: greenyellow;
+  text-align: center;
+}
+/*NAVIGATION*/
+.page-navigation {
+  background-color: #222;
+  border-color: #101010;
+  min-height: 64px;
+}
+.page-navigation li {
+  float: left; /*робим горизонтальне меню*/
+  width: 100px;
+}
+.page-navigation a {
+  display: block; /*робим лінійні елементи блочними, щоб вони розтягувались на всю ширину li*/
+  color: #9d9d9d;
+  line-height: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+.page-navigation a:hover {
+  color: yellowgreen;
+  background-color: black;
+}
+/*LOGIN FORM*/
+.login {
+  padding: 15px 0;
+  float: right;
+}
+.login input[type="text"],
+.login input[type="password"] {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid transparent; /*прозора границя*/
+  border-radius: 5px;
+  outline: none; /*зникає блакитна обводка поля
+	 при клацанні по ньому*/
+}
+.login input[type="submit"] {
+  padding: 5px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+.login input[type="submit"]:hover,
+button:hover {
+  background-color: darkgrey;
+  color: white;
+}
+/*MAIN PART(частина)*/
+.collections {
+  overflow: auto;
+}
+.collection-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+  font-size: 36px;
+}
+.collection-title small {
+  color: #777;
+  font-size: 70%;
+}
+.collection-item-outer {
+  display: inline-block; /*займе той розмір
+яким по розміру буде його містиме, але одночасно
+буде поводитись як блочний елемент*/
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 33.33%;
+  box-sizing: border-box; /*щоб величина границі 
+теж включалася у width*/
+}
+.collections > div:first-child {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.collections > div:last-child {
+  padding-left: 5px;
+  padding-right: 0;
+}
+.collection-item {
+  border: 1px solid #959595;
+}
+.collection-item img,
+.collection-item video {
+  width: 100%;
+}
+.collection-text {
+  padding: 0 20px 20px 20px;
+}
+.collection-text h3 {
+  color: yellowgreen;
+  overflow: hidden; /*робим щоб заголовок
+	якщо буде більшим непереходив у інший
+	дивись далі*/
+  white-space: nowrap; /*забороняємо реагувати
+	на пробіли див. далі*/
+  text-overflow: ellipsis; /*додається три крапки
+	якщо текст непоміщається*/
+}
+.collection-text p {
+  height: 80px;
+  overflow: hidden; /*все що виходить за
+межу максимальної висоти сховати*/
+}
+.collection-text button {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+/*FOOTER*/
+.footer {
+  background-color: yellowgreen;
+  color: white;
+  padding: 20px 0;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
